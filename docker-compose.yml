@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend:
+    # ... исходное описание
+  frontend:
+    # ...
+  swarm-aggregator:
+    build: ./backend
+    command: celery -A backend.tasks worker --queues=swarm --loglevel=info
+    environment:
+      - GRA_LIBS_PATH=/gra-libs
+    volumes:
+      - ./GRA-Core-new-Unified-Hierarchical-Stability-Library:/gra-libs
+    depends_on:
+      - redis

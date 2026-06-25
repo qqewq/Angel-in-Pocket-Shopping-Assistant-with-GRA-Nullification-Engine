@@ -1,0 +1,22 @@
+{
+  "free": {
+    "name": "Free",
+    "price_monthly": 0,
+    "features": ["shopping_assistant", "basic_nullification"]
+  },
+  "premium": {
+    "name": "Premium",
+    "price_monthly": 9.99,
+    "features": ["shopping_assistant", "advanced_nullification", "personal_roadmap_3y"]
+  },
+  "visionary": {
+    "name": "Visionary",
+    "price_monthly": 19.99,
+    "features": ["shopping_assistant", "advanced_nullification", "personal_roadmap_10y", "scenario_branching"]
+  },
+  "enterprise": {
+    "name": "Enterprise API",
+    "price_monthly": 499.99,
+    "features": ["aggregated_demand_access", "erp_integration", "raw_data_export"]
+  }
+}
