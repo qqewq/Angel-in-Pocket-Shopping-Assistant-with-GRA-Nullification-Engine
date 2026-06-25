@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=2.5cm}
+
+\title{Angel-in-Pocket Shopping Assistant with GRA Nullification Engine\\
+\large Bilingual Paper / Билингвальная статья}
+\author{qqewq}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\selectlanguage{english}
+We present an AI-powered shopping assistant that detects risky products, suspicious reviews, and potentially hostile sellers by analyzing a local interaction graph and applying a GRA-inspired nullification engine. The system combines graph construction, recursive equilibrium computation, and a nullification cascade to produce product and seller trust scores. Subscription tiers control analysis depth and unlock richer diagnostics.
+
+\selectlanguage{russian}
+Представлен AI-ассистент для онлайн-шопинга, который выявляет рискованные товары, подозрительные отзывы и потенциально враждебных продавцов, анализируя локальный граф взаимодействий и применяя GRA-инспирированный движок обнуления. Система объединяет построение графа, рекурсивное вычисление равновесия и каскад обнуления для получения оценок доверия к товарам и продавцам. Уровни подписки управляют глубиной анализа и открывают более подробную диагностику.
+\end{abstract}
+
+\section{Introduction / Введение}
+
+\selectlanguage{english}
+Online marketplaces are increasingly affected by fake reviews, manipulative pricing, and adversarial behavior. A practical shopping assistant must therefore look beyond isolated product metadata and analyze the surrounding social and transactional context. In this paper, we describe a graph-based assistant that uses a GRA-style nullification engine to identify and dampen suspicious structures.
+
+\selectlanguage{russian}
+Онлайн-маркетплейсы всё сильнее страдают от фейковых отзывов, манипулятивного ценообразования и враждебного поведения. Практический шопинг-ассистент должен поэтому смотреть не только на отдельные характеристики товара, но и на окружающий социальный и транзакционный контекст. В этой статье мы описываем графовый ассистент, использующий GRA-движок обнуления для выявления и подавления подозрительных структур.
+
+\section{System Overview / Обзор системы}
+
+\selectlanguage{english}
+The system is built around four components:
+\begin{itemize}
+    \item graph construction from products, sellers, reviews, and users;
+    \item initial suspicion assignment using simple heuristics;
+    \item recursive equilibrium propagation across the graph;
+    \item nullification cascade to spread or attenuate risk.
+\end{itemize}
+The final output is a trust score in the interval $[0,1]$, where higher values indicate lower risk.
+
+\selectlanguage{russian}
+Система состоит из четырёх компонентов:
+\begin{itemize}
+    \item построение графа по товарам, продавцам, отзывам и пользователям;
+    \item назначение начальной подозрительности на основе простых эвристик;
+    \item рекурсивное распространение равновесия по графу;
+    \item каскад обнуления для распространения или ослабления риска.
+\end{itemize}
+Итоговый результат — индекс доверия на интервале $[0,1]$, где большие значения означают меньший риск.
+\end{document}
