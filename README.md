@@ -1,5 +1,5 @@
 https://orcid.org/my-orcid?orcid=0009-0004-1872-1153
-https://doi.org/10.5281/zenodo.20848755
+https://doi.org/10.5281/zenodo.20855851
 --------------
 # Angel-in-Pocket Shopping Assistant with GRA Nullification Engine  
 # Ангел в Кармане: шопинг-ассистент с GRA-движком обнуления
